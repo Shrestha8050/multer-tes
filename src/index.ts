@@ -28,7 +28,7 @@ function uploadFilesInside(req: Request, res: Response) {
     if (error) {
       return res.status(400).send(error);
     }
-    console.log(req.body, req.files);
+    console.log(req.body, req.file);
     return res.json({ success: true });
   });
 }
